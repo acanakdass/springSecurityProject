@@ -1,5 +1,6 @@
 package com.springapps.springSecurityProject.api;
 
+import com.springapps.springSecurityProject.entities.Dtos.RoleToUserDto;
 import com.springapps.springSecurityProject.entities.Role;
 import com.springapps.springSecurityProject.entities.User;
 import com.springapps.springSecurityProject.service.UserService;
@@ -42,8 +43,4 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 }
-@Data
- class RoleToUserDto{
-     String username;
-     String roleName;
-}
+
